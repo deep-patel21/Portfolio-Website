@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Deep Patel Portfolio Wesbite</title> 
+            <link rel="stylesheet" href="style.css">
+            <script src="https://kit.fontawesome.com/f4c8ee2b64.js" crossorigin="anonymous"></script>
+        </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="TestImages/logo.png" alt="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#experience">Experience</a>
+                            <a href="#technologies">Skills</a> 
+                            <a href="#projects">Projects</a>
+                            <a href="#awards">Awards</a>
+                            <a href="#contact">Contact</a></li>  
+                            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>     
+                    </ul>
+                    <i class="fa-solid fa-grid" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1> Hey! I'm Deep.</h1>
+                    <p>Software Engineering Student</p>
+                </div>
+            </div>        
+        </div>
+        <!-----------------------------------About Me-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-column-1">
+                        <img src="TestImages/user.png">
+                    </div>
+                    <div class="about-column-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit 
+                            esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                            sint occaecat cupidatat non proident, sunt in culpa 
+                            qui officia deserunt mollit anim id est laborum.    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------Work Experience-------->
+        <div id="experience">
+            <div class="container">
+                <h1 class="sub-title">Work Experiences</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="DeepImages/Bell.jpg">
+                        <div class="layer">
+                            <h3>Software Development Intern</h3>
+                            <p>Worked on a database management program in Python
+                                and SQL to manage/connect hundreds of data streams 
+                                to Avaya softwares</p>
+                        </div>
+                    </div>    
+                    <div class="work">
+                        <img src="DeepImages/Stratagem Logo for HTML.png">
+                        <div class="layer">
+                            <h3>Media Creation Intern</h3>
+                            <p>Pitched design media solutions to top companies within
+                                the creative sector; The Stratagem Group, Live Nation,
+                                Wattpad, The Remix Project, Arts and Culture Division
+                                of Toronto.</p>
+                        </div>
+                    </div>  
+                    <div class="work">
+                        <img src="DeepImages/RCOM LOGO.png">
+                        <div class="layer">
+                            <h3>Piano Teaching Assistant</h3>
+                            <p>Assisted lead teacher for group and private teaching sessions
+                                for 10+ cohorts of students aged 5 to 16 of levels 1A to 6 
+                                in the RCOM program syllabus.</p>
+                        </div>
+                    </div>  
+                </div>
+                <button class="button" id="rgbButton">
+                    <a href="https://www.linkedin.com/in/dpatel3337/" target="_blank">View on LinkedIn</a>
+                </button>
+            </div>
+        </div>
+        <!---------------------- Technologies ----------------->
+        <div id="technologies">
+            <div class="container">
+                <div class="sub-title">Technologies</div>
+                <div class="horizontal-scroll">
+                    <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class="fa-solid fa-left"></i></button>
+                    <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i class="fa-solid fa-right"></i></button>
+                    <div class="logos-container">
+                        <div class="logos-circle"><img src="DeepImages/pythonLogo.PNG" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/real java.png" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/c logo.jpg" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/SQL LOGO.png" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/html logo.png" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/css logo.png" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/javascript logo.png" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/latex logo.jpg" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/eclipse logo.png" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/vscode real.png" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/multisim.png" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/quartus.jpg" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/netbeans.png" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/microsoft ofifce logo.png" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/filmora logo.png" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/audacity logo.png" alt=""></div>
+                        <div class="logos-circle"><img src="DeepImages/arduino logo.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="technology-stack">
+            <div class="technology-stack-container" id="technology-stack">
+                <div class="technology-stack-content">
+                    <div class="technology-stack-box">
+                        <!---<i class = 'bx bx-code'></i>--->
+                        <h2>Languages:</h2>
+                        <h4>Python</h4>
+                        <h4>C</h4>
+                        <h4>Java</h4>
+                        <h4>SQL</h4>
+                        <h4>HTML</h4>
+                        <h4>CSS</h4>
+                        <h4>JavaScript</h4>
+                        <h4>LaTex</h4>
+                    </div>
+                    <div class="technology-stack-box">
+                        <!---<i class='bx bx-library'></i>--->
+                        <h2>Libraries/Frameworks:</h2>
+                        <h4>Pygame</h4>
+                        <h4>NodeJS</h4>
+                        <h4>React.js</h4>
+                        <h4>Bootstrap</h4>
+                    </div>
+                    <div class="technology-stack-box">
+                        <!---<i class='bx bxl-windows'></i>--->
+                        <h2>Operating Systems:</h2>
+                        <h4>Windows</h4>
+                        <h4>Unix</h4>
+                    </div>
+                    <div class="technology-stack-box">
+                        <!---<i class='bx bx-laptop'></i>--->
+                        <h2>Softwares/Programs:</h2>
+                        <h4>VSCode</h4>
+                        <h4>NI MultiSIM</h4>
+                        <h4>Altera Quartus</h4>
+                        <h4>Apache Netbeans</h4>
+                        <h4>Arduino</h4>
+                        <h4>Eclipse</h4>
+                        <h4>Microsoft Office Suite</h4>
+                        <h4>Wondershare Filmora 9</h4>
+                        <h4>Audacity</h4>
+                    </div>
+                    <div class="technology-stack-box">
+                        <!---<i class='bx bx-laptop'></i>--->
+                        <h2>Development Tools:</h2>
+                        <h4>GitHub</h4>
+                        <h4>Discord</h4>
+                    </div>
+                    <div class="technology-stack-box">
+                        <!---<i class='bx bx-user'></i>--->
+                        <h2>Courses:</h2>
+                        <h4>Digital Systems</h4>
+                        <h4>Software Systems</h4>
+                        <h4>Data Structures and Algorithms</h4>
+                        <h4>Linear Algebra</h4>
+                        <h4>Calculus I to III</h4>
+                        <h4>Eletric Networks and Circuits</h4>
+                        <h4>Semiconductor Physics</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------Contact Me----------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title"> Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> deepstudios21@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 647-526-3337</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/deep-patel21" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://www.linkedin.com/in/dpatel3337/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="DeepImages/Deep Patel Resume.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+                            <button id="submitbtn" type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p><i class="fa-solid fa-code"></i> Developed by Deep Patel © 2022</p>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab (tabname) {
+                for(tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx6ttWaQp04LXHjflhFZLnrdB6N6Px6ba8AFgikBbt2ma9jnMGif3R2yWEfPwwAKPt6FA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Success"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                    }) 
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+        <script>
+            let currentScrollPosition = 0;
+            let scrollAmount = 320;
+            const sCont = document.querySelector(".logos-container");
+            const hScroll = document.querySelector(".horizontal-scroll");
+            const btnScrollLeft = document.querySelector("#btn-scroll-left");
+            const btnScrollRight = document.querySelector("#btn-scroll-right");
+            let maxScroll = -sCont.offsetWidth + hSCroll.offsetWidth;
+            btnScrollLeft.style.opacity = "0";
+            function scrollHorizontally(val) {
+                currentScrollPosition = currentScrollPosition + (val * scrollAmount);
+                if(currentScrollPosition >= 0) {
+                    currentScrollPosition = 0;
+                    btnScrollLeft.style.opacity = "0";
+                }
+                else {
+                    btnScrollLeft.style.opacity = "1";
+                }
+                if(currentScrollPosition <= maxScroll) {
+                    currentScrollPosition = maxScroll;
+                    btnScrollRight.style.opacity = "0";
+                }
+                else {
+                    btnScrollRight.style.opacity = "1";
+                }
+                SCont.style.left = currentScrollPosition + "px";
+            }
+          </script>
+    </body>
+</html>
