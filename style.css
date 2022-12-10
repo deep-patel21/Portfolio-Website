@@ -59,12 +59,24 @@ nav ul li a:hover::after {
 }
 .header-text {
     margin-top: 20%;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Comfortaa', sans-serif, monospace;
+    color: #fff;
 }
 .header-text h1 {
-    font-size: 100px;
+    font-size: 140px;
     margin-top: 20px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(DeepImages/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 50s linear infinite;
+}
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
 }
 .header-text h1 span {
     color: #ff004f;
@@ -304,17 +316,12 @@ form #submitbtn .btn2{
     background: #080808;
 }
 .copyright {
-    background-color: linear-gradient(90deg,
-                                     #f9d923,
-                                     #00a19d,
-                                     #0c87b7,
-                                     #cb49ff,
-                                     #ff6666,
-                                     #f9d923);
+    background-color: #080808;
     width: 100%;
     text-align: center;
-    padding: 2px 0;
-    font-weight: 300;
+    padding: 20px 0;
+    font-weight: 500;
+    color:#999;
     margin-top: 20px;
     font-family: 'Comfortaa', sans-serif, monospace;
 }
@@ -500,3 +507,4 @@ nav .fa-solid {
     display: block;
     padding: 0px 200px;
 }
+
