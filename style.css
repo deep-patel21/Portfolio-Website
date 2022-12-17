@@ -18,6 +18,7 @@ body {
     background-image: url(TestImages/background.png);
     background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .container {
     padding: 10px 10%;
@@ -38,6 +39,7 @@ nav ul li {
 }
 nav ul li a {
     color: #fff;
+    font-weight: 560;
     text-decoration: none;
     font-family: 'Comfortaa', sans-serif, monospace;
     font-size: 18px;
@@ -84,7 +86,7 @@ nav ul li a:hover::after {
 /*-------------- About Me -------------*/
 #about {
     padding: 50px 0;
-    color: #ababab;
+    color: #fff;
 }
 .row {
     display: flex;
@@ -92,22 +94,28 @@ nav ul li a:hover::after {
     flex-wrap: wrap;
 }
 .about-column-1 {
-    flex-basis: 25%;
+    flex-basis: 24%;
 }
 .about-column-1 img {
     width: 100%;
     border-radius: 100px;
+}
+.about-column-2 h1{
+    font-size: 65px;
 }
 .about-column-2 {
     flex-basis: 70%;
     font-size: 27px;
     font-family: 'Comfortaa', sans-serif, monospace;
 }
+.about-column-2 p {
+    font-size: 30px;
+}
 /*-------------- Work Experience ----------*/
 #experience {
     padding: 10px 0;
     font-family: 'Comfortaa', sans-serif, monospace;
-    font-size: 27px;
+    font-size: 35px;
     flex-basis: 3%;
     text-shadow: 0 0 1px #080808, 0 0 10px #080808;
 }
@@ -188,9 +196,9 @@ nav ul li a:hover::after {
 Button {
     cursor: pointer;
     margin-top: 20px;
-    margin-left: 579px;
+    margin-left: 519px;
     position: relative;
-    padding: 15px 50px;
+    padding: 5px 158px;
     font-size: 30px;
     color: #fff;
     background: rgba(255, 255, 255, .1);
@@ -205,7 +213,9 @@ button a {
     color:#fff;
     text-decoration: none;
     font-weight: 500;
+    font-size: 35px;
     font-family: 'Comfortaa', sans-serif, monospace;
+    -webkit-text-stroke: 1.5px black;
 }
 button {
     z-index: 1;
@@ -327,11 +337,11 @@ form #submitbtn .btn2{
 }
 /*-------------- Technologies ----------*/
 #technologies {
-    font-size: 60px;
+    font-size: 75px;
     font-weight: 700;
     font-family: 'Comfortaa', sans-serif, monospace;
     text-align: inline;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .horizontal-scroll {
     width: 1515px;
@@ -408,14 +418,14 @@ form #submitbtn .btn2{
     border-radius: 12px;
     border-style: double;
     transition: 0.25s all cubic-bezier(0.075, 0.82, 0.165, 1);
-    box-shadow: 0 0 20px lightcoral, 0 0 10px #2196f3, 0 0 5px #2196f3;
+    box-shadow: 0 0 20px white, 0 0 10px #2196f3, 0 0 5px #2196f3;
 }
 .technology-stack-box:hover {
     transition: 5s all cubic-bezier(0.075, 0.82, 0.165, 1) ease-in-out;
     background-image: url(DeepImages/technology\ stack\ hover.png); 
     background-blend-mode: darken;
     background-size: 100%;
-    box-shadow: 0 0 50px red, 0 0 10px #2196f3, 0 0 20px #2196f3;
+    box-shadow: 0 0 50px white, 0 0 10px #2196f3, 0 0 20px #2196f3;
     transform: scale(1.01);
 }
 .technology-stack-box .bx {
@@ -437,6 +447,54 @@ form #submitbtn .btn2{
 }
 .technology-stack-box p {
     font-size: 0.9rem;
+}
+/*---------------------- Projects ----------------------*/
+.sub-titleProjects {
+    font-size: 75px;
+    font-weight: 600;
+    display: flex;
+    margin-left: 190px;
+    margin-bottom: -92px;
+}
+.containerProjects {
+    display: flex;
+    width: 90vw;
+    padding: 100px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #ece9e6);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: 85px;
+}
+.panel {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 20vw;
+    margin: 10px;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    transition: all 700ms ease-in-out;
+}
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.panel.active {
+    flex: 7;
+}
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0.25s;
 }
 /*---------------------- Screen Adjustment -------------*/
 nav .fa-solid {
@@ -500,11 +558,17 @@ nav .fa-solid {
     .copyright {
         font-size: 14px;
     }
+    .container {
+        width: 100vw;
+    }
+    .panel:nth-last-of-type(4) {
+        display: none;
+    }
 }
+/*---------------------- Form Message -------------*/
 #msg {
     color: #61b752;
     margin-top: -40px;
     display: block;
     padding: 0px 200px;
 }
-
