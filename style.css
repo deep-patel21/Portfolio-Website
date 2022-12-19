@@ -456,6 +456,12 @@ form #submitbtn .btn2{
     margin-left: 190px;
     margin-bottom: -92px;
 }
+.projectExpansion {
+    position: absolute;
+    margin-left: 1375px;
+    margin-top: 65px;
+    font-size: 20px;
+}
 .containerProjects {
     display: flex;
     width: 90vw;
@@ -464,8 +470,9 @@ form #submitbtn .btn2{
     background: linear-gradient(to right, #ece9e6);
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: hidden; 
     margin-left: 85px;
+    transition: scale(0.7);
 }
 .panel {
     position: relative;
@@ -480,6 +487,11 @@ form #submitbtn .btn2{
     cursor: pointer;
     flex: 0.5;
     transition: all 700ms ease-in-out;
+    opacity: 0.25;
+}
+.panel.active {
+    flex: 5;
+    opacity: 1;
 }
 .panel h3 {
     font-size: 24px;
@@ -489,14 +501,11 @@ form #submitbtn .btn2{
     margin: 0;
     opacity: 0;
 }
-.panel.active {
-    flex: 7;
-}
 .panel.active h3 {
     opacity: 1;
     transition: opacity 0.3s ease-in-out 0.25s;
 }
-/*---------------------- Screen Adjustment -------------*/
+/*---------------------- Modular Adjustment -------------*/
 nav .fa-solid {
     display:none;
 }
