@@ -72,6 +72,7 @@ nav ul li a:hover::after {
     -webkit-text-stroke: 1px #fff;
     background: url(DeepImages/back.png);
     -webkit-background-clip: text;
+    background-clip: text;
     background-position: 0 0;
     animation: back 50s linear infinite;
 }
@@ -123,7 +124,7 @@ nav ul li a:hover::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .work {
     border-radius: 12px;
@@ -193,7 +194,7 @@ nav ul li a:hover::after {
 .btn:hover {
     background: #ff004f;
 }
-Button {
+.button {
     cursor: pointer;
     margin-top: 20px;
     margin-left: 519px;
@@ -207,7 +208,7 @@ Button {
     transition: 0.4s;
     align-items: center;
 }
-button a {
+.button a {
     text-align: center;
     justify-content: center;
     color:#fff;
@@ -217,7 +218,7 @@ button a {
     font-family: 'Comfortaa', sans-serif, monospace;
     -webkit-text-stroke: 1.5px black;
 }
-button {
+.button {
     z-index: 1;
     border-color: transparent;
     background: linear-gradient(90deg,
@@ -240,7 +241,7 @@ button {
         background-position: 400%;
     }
 }
-button::before {
+.button::before {
     content: '';
     position: absolute;
     top: -1px;
@@ -253,9 +254,15 @@ button::before {
     opacity: 0;
     transition: .4s ease-out;
 }
-button:hover::before {
+.button:hover::before {
     opacity: -1;
     z-index: -1;
+}
+.hoverMessage {
+    font-size: 20px;
+    position: absolute;
+    margin-left: 1375px;
+    margin-top: 50px;
 }
 /*-------------- Contact Form ----------*/
 .contact-left {
@@ -335,6 +342,19 @@ form #submitbtn .btn2{
     margin-top: 20px;
     font-family: 'Comfortaa', sans-serif, monospace;
 }
+.flagCounterSpecs {
+    border: 2px solid #ff004f;
+    border-radius: 12px;
+    float: left;
+    position: relative;
+    margin-left: 186px;
+    overflow: hidden;
+    bottom: 290px;
+    margin-bottom: -100px;
+}
+.flagCounterSpecs:hover {
+    border: 3px solid white;
+}
 /*-------------- Technologies ----------*/
 #technologies {
     font-size: 75px;
@@ -352,6 +372,7 @@ form #submitbtn .btn2{
     display: flex;
     padding-top: 10px 0;
     margin-top: 10px;
+    position: absolute;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -359,11 +380,11 @@ form #submitbtn .btn2{
     overflow: hidden;
 }
 .horizontal-scroll .btn-scroll {
-    background-color: #fff;
+    background-color: #ccc;
     color: #999;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border: 0;
-    border-radius: 50%;
+    border-radius: 100%;
     margin: 0 5px;
     z-index: 1;
     cursor: pointer;
@@ -389,6 +410,10 @@ form #submitbtn .btn2{
     align-items: center;
     border-radius: 50%;
     transform: rotateZ(45deg);
+}
+.logos-circle:hover {
+    transform: scale(1.2);
+    box-shadow: #ece9e6 3px 3px 50px;
 }
 .logos-circle img {
     width: 52px;

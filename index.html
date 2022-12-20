@@ -19,7 +19,7 @@
                             <a href="#about">About</a>
                             <a href="#experience">Experience</a>
                             <a href="#technologies">Skills</a> 
-                            <a href="#projects">Projects</a>
+                            <a href="#projectsScroll">Projects</a>
                             <a href="#awards">Awards</a>
                             <a href="#contact">Contact</a></li>  
                             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>     
@@ -63,6 +63,9 @@
         </div>
         <!----------------------------Work Experience-------->
         <div id="experience">
+            <div class="hoverMessage">
+                <h3>Hover to show</h3>
+            </div>
             <div class="container">
                 <h1 class="sub-title">Experience</h1>
                 <div class="work-list">
@@ -70,9 +73,9 @@
                         <img src="DeepImages/Bell.jpg">
                         <div class="layer">
                             <h3>Software Development Intern</h3>
-                            <p>Worked on a database management program in Python
-                                and SQL to manage/connect hundreds of data streams 
-                                to Avaya softwares</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>&nbsp;</p>
+                            <p>May 2023 - Aug 2023</p>
                         </div>
                     </div>    
                     <div class="work">
@@ -83,6 +86,8 @@
                                 the creative sector; The Stratagem Group, Live Nation,
                                 Wattpad, The Remix Project, Arts and Culture Division
                                 of Toronto.</p>
+                            <p>&nbsp;</p>
+                            <p>July 2020 - Aug 2020</p>   
                         </div>
                     </div>  
                     <div class="work">
@@ -92,6 +97,8 @@
                             <p>Assisted lead teacher for group and private teaching sessions
                                 for 10+ cohorts of students aged 5 to 16 of levels 1A to 6 
                                 in the RCOM program syllabus.</p>
+                            <p>&nbsp;</p>
+                            <p>April 2018 - Sep 2021</p>
                         </div>
                     </div>  
                 </div>
@@ -105,8 +112,8 @@
             <div class="container">
                 <div class="sub-title">Technologies</div>
                 <div class="horizontal-scroll">
-                    <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class="fa-solid fa-left"></i></button>
-                    <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i class="fa-solid fa-right"></i></button>
+              <!--      <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class="fa-solid fa-left"></i></button>
+                    <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"><i class="fa-solid fa-right"></i></button> -->
                     <div class="logos-container">
                         <div class="logos-circle"><img src="DeepImages/pythonLogo.PNG" alt=""></div>
                         <div class="logos-circle"><img src="DeepImages/real java.png" alt=""></div>
@@ -171,6 +178,7 @@
                     <div class="technology-stack-box">
                         <h2>Development Tools:</h2>
                         <h4>GitHub</h4>
+                        <h4>GitPages</h4>
                         <h4>Discord</h4>
                     </div>
                     <div class="technology-stack-box">
@@ -187,12 +195,12 @@
             </div>
         </div>
         <!---------------------- Projects ----------------->
-        <div class="sub-titleProjects">Projects</div>
+        <div id="projectsScroll" class="sub-titleProjects">Projects</div>
         <div class="projectExpansion">
             <h3>Click to expand</h3>
         </div>
         <div class="containerProjects">
-            <div class="panel active" style="background-image: url(DeepImages/notesforyou\ project\ version.png);">
+            <div class="panel active" style="background-image: url(DeepImages/Notes4YouMainScreen.png);">
                 <h3>Notes4You Web App</h3>    
             </div>
             <div class="panel" style="background-image: url(DeepImages/SortingAlgorithmProject.png);">
@@ -237,6 +245,12 @@
             <div class="copyright">
                 <p><i class="fa-solid fa-code"></i> Developed by Deep Patel © 2022</p>
             </div>
+        </div>
+        <div class="counter">
+            <a href="http://s11.flagcounter.com/more/yyB4" target="_blank">
+                <img src="https://s11.flagcounter.com/count2/yyB4/bg_000000/txt_FFFFFF/border_CC1616/columns_4/maxflags_12/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" 
+                alt="FlagCounter" class="flagCounterSpecs" border="0">
+            </a>
         </div>
          <!---------------------- JavaScript Portion ----------------->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
